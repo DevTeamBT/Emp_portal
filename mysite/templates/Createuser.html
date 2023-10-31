@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="./createuser.css"> -->
+    <link rel="stylesheet" href="{% static 'css/createuser.css' %}" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="flex-column">
+      <div id="main">
+        <button class="openbtn" onclick="toggleNav()">☰</button>
+      </div>
+      <img
+        class="image"
+        src="https://bodhtree.com/wp-content/uploads/2016/02/logo-sticky.png"
+      />
+      <a class="nav-link" href="#">Home</a>
+      <span class="nav-link">
+        Admin
+        <span id="subitems">
+          <ul>
+            <li><a href=".html">Hr</a></li>
+            <li><a href=".html">Sales</a></li>
+            <li><a href=".html">Recruting</a></li>
+          </ul>
+        </span>
+      </span>
+      <a class="nav-link" href="#">Tickets</a>
+      <a class="nav-link" href="#">Forums</a>
+      <a class="nav-link" href="#">Contacts</a>
+      <div class="login">
+        <h5>Profile</h5>
+        <!-- <img src="images/user.png" /> -->
+
+        <img src="{% static 'images/user.png' %}" alt="propic" />
+        <button type="button" class="btn btn-dark">Log Out</button>
+      </div>
+    </nav>
+    <div class="container">
+      <h4>Create User</h4>
+      <form>
+        <div class="mb-3 row">
+          <div class="col-sm-5">
+            <input
+              type="text"
+              class="form-control"
+              id="firstname"
+              placeholder="First Name"
+            />
+          </div>
+          <div class="col-sm-5">
+            <input
+              type="text"
+              class="form-control"
+              id="lastname"
+              placeholder="Last Name"
+            />
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <div class="col-sm-5">
+            <input
+              type="text"
+              class="form-control"
+              id="designation"
+              placeholder="Designation"
+            />
+          </div>
+          <div class="col-sm-5">
+            <select class="form-select">
+              <option value="department">Select Department</option>
+              <option value="department1">Department1</option>
+              <option value="department2">Department2</option>
+              <option value="department3">Department3</option>
+              <option value="department4">Department4</option>
+            </select>
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <div class="col-sm-5">
+            <select class="form-select">
+              <option value="report">Select Reports</option>
+              <option value="report1">Report1</option>
+              <option value="report2">Report2</option>
+              <option value="report3">Report3</option>
+              <option value="report4">Report4</option>
+            </select>
+          </div>
+          <div class="col-sm-5">
+            <input
+              type="text"
+              class="form-control"
+              id="doj"
+              placeholder="Date Of Joining(mm/dd/yyyy)"
+            />
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <div class="col-sm-5">
+            <select class="form-select">
+              <option value="type">Select WorkType</option>
+              <option value="type1">Type1</option>
+              <option value="type2">Type2</option>
+              <option value="type3">Type3</option>
+              <option value="type4">Type4</option>
+            </select>
+          </div>
+          <div class="col-sm-5">
+            <input
+              type="text"
+              class="form-control"
+              id="annualctc"
+              placeholder="Annual CTC"
+            />
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <div class="col-sm-5">
+            <input
+              type="email"
+              class="form-control"
+              id="officeemail"
+              placeholder="Office Email"
+            />
+          </div>
+          <div class="col-sm-5">
+            <select class="form-select">
+              <option value="location">Select any Location</option>
+              <option value="location1">L1</option>
+              <option value="location2">L2</option>
+              <option value="location3">L3</option>
+              <option value="location4">L4</option>
+            </select>
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <div class="col-sm-5">
+            <input
+              type="number"
+              class="form-control"
+              id="mobile"
+              placeholder="Mobile No"
+            />
+          </div>
+          <div class="col-sm-5">
+            <input
+              type="email"
+              class="form-control"
+              id="personalemail"
+              placeholder="Personal Email"
+            />
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <div class="col-sm-5">
+            <select class="form-select">
+              <option value="gender">Select Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="transgender">Transgender</option>
+            </select>
+          </div>
+          <div class="col-sm-5">
+            <select class="form-select">
+              <option value="state">Select State</option>
+              <option value="ap">Andhrapradesh</option>
+
+              <option value="Arunachal">Arunachal Pradesh</option>
+
+              <option value="assam">Assam</option>
+
+              <option value="Bihar">Bihar</option>
+
+              <option value="Chattisgarh">Chattisgarh</option>
+
+              <option value="Goa">Goa</option>
+
+              <option value="Gujarat">Gujarat</option>
+
+              <option value="Haryana">Haryana</option>
+
+              <option value="Himachal Pradesh">Himachal Pradesh</option>
+
+              <option value="Jharkhand">Jharkhand</option>
+
+              <option value="Karnataka">Karnataka</option>
+
+              <option value="Kerala">Kerala</option>
+
+              <option value="Madhya Pradesh">Madhya Pradesh</option>
+
+              <option value="Maharashtra">Maharashtra</option>
+
+              <option value="Manipur">Manipur</option>
+
+              <option value="Meghalaya">Meghalaya</option>
+
+              <option value="Mizoram">Mizoram</option>
+
+              <option value="Nagaland">Nagaland</option>
+
+              <option value="Odisha">Odisha</option>
+
+              <option value="Punjab">Punjab</option>
+
+              <option value="Rajasthan">Rajasthan</option>
+
+              <option value="Sikkim">Sikkim</option>
+
+              <option value="TamilNadu">TamilNadu</option>
+
+              <option value="Telangana">Telangana</option>
+
+              <option value="Tripura">Tripura</option>
+
+              <option value="Uttarakhand">Uttarakhand</option>
+
+              <option value="Uttarpradesh">Uttarpradesh</option>
+
+              <option value="WestBengal">WestBengal</option>
+            </select>
+          </div>
+        </div>
+        <div class="mt-3 buttons">
+          <button type="button" class="btn btn-primary col-sm-2">Create</button>
+          <button type="button" class="btn btn-secondary col-sm-2">
+            Cancel
+          </button>
+        </div>
+      </form>
+    </div>
+    <script>
+      var sidebarOpen = true;
+      function toggleNav() {
+        var sidebar = document.querySelector(".flex-column");
+        if (sidebarOpen) {
+          sidebar.style.width = "0";
+          sidebar.style.padding = "0";
+        } else {
+          sidebar.style.width = "15%";
+          sidebar.style.padding = "30px";
+        }
+        sidebarOpen = !sidebarOpen;
+      }
+    </script>
+  </body>
+</html>
